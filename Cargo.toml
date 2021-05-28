@@ -1,5 +1,5 @@
 [package]
-name = "RefactorChromiumFeatureTests"
+name = "refactortests"
 version = "0.1.0"
 authors = ["cvlvxi <cvlvxi@outlook.com>"]
 edition = "2018"

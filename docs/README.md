@@ -27,7 +27,7 @@ e.g. `InitAndEnableFeature`
 
 ### 1. Find a bunch of tests with the above requirement
 
-### 2. Simply Bracket parser
+### 2. Simply Regex parser
 - Restricting it to classes
 - Regex:
 
@@ -44,3 +44,10 @@ const message_center::Notification* GetPreviewNotification() {
   return nullptr;
 }
 ```
+
+### 3. Filter the classes by InitAndEnableFeature
+
+### 4. Given a class with this there are rules:
+
+1. Are there multiple calls to this? 
+2
