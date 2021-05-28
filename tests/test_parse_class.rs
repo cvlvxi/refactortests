@@ -9,7 +9,7 @@ mod test_parse_class {
         let d: Vec<&String> = c.iter().filter(|&x| find_relevant_classes(x)).collect();
         for i in c {
             if find_relevant_classes(&i) {
-                println!("{:?}", get_feature(&i));
+                println!("{}", mutate_class(&i));
             }
         }
     }
@@ -18,6 +18,12 @@ mod test_parse_class {
     fn test_string_matches() {
         let dog = String::from("hello world this is a world hello");
         println!("{:?}", dog.matches("hello").count());
+    }
+
+    #[test]
+    fn test_string_replace() {
+        let a = String::from("hello world").replace("hello", "goodbye");
+        println!("{}", a);
     }
 }
    
